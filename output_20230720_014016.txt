@@ -1,0 +1,64 @@
+
+Original Weight:   7196.44
+Modified Weight:   7259.58
+Weight Difference: 63.14
+
+Original pI:   6.72
+Modified pI:   6.71
+pI Difference: 0.01
+
+Original Aromaticity:   0.04
+Modified Aromaticity:   0.03
+Aromaticity Difference: 0.01
+
+Original Instability Index:   -0.69
+Modified Instability Index:   16.62
+Instability Index Difference: 17.31
+
+Original Gravy:   0.69
+Modified Gravy:   0.49
+Gravy Difference: 0.20
+
+Original Charge at pH 7:   -0.20
+Modified Charge at pH 7:   -0.22
+Charge at pH 7 Difference: 0.02
+
+Alignment:
+[91mA[0m[91mV[0m[91mC[0mPTGL[91mF[0mS[91mN[0mPLCCAT[91mN[0m[91mV[0mL[91mD[0mL[91mI[0mG[91mV[0mDCKT[91mP[0mT[91mI[0m[91mA[0m[91mV[0m[91mD[0mT[91mG[0m[91mA[0m[91mI[0m[91mF[0m[91mQ[0m[91mA[0mHC[91mA[0mSKGSKPLCC[91mV[0m[91mA[0mP[91mV[0m[91mA[0m[91mD[0m[91mQ[0m[91mA[0mLLC[91mQ[0mK[91mA[0m[91mI[0m[91mG[0mTF
+[91mG[0m[91mI[0m[91mM[0mPTGL[91mL[0mS[91mQ[0mPLCCAT[91mQ[0m[91mI[0mL[91mE[0mL[91mL[0mG[91mI[0mDCKT[91mW[0mT[91mL[0m[91mG[0m[91mI[0m[91mE[0mT[91mA[0m[91mG[0m[91mL[0m[91mL[0m[91mN[0m[91mG[0mHC[91mG[0mSKGSKPLCC[91mI[0m[91mG[0mP[91mI[0m[91mG[0m[91mE[0m[91mN[0m[91mG[0mLLC[91mN[0mK[91mG[0m[91mL[0m[91mA[0mTF
+
+Length of sequences: Original: 71, Mutated: 71 amino acids
+Number of differing amino acids: 33
+Percent change: 46.48%
+Mutated sequence: GIMPTGLLSQPLCCATQILELLGIDCKTWTLGIETAGLLNGHCGSKGSKPLCCIGPIGENGLLCNKGLATF
+
+Kyte-Doolittle scores:
+
+Original:
+[8.5, 6.9, 6.2, 4.0, 3.6, 3.9, 4.7, 1.9, 0.7, 0.7, 0.4, 3.7, 9.0, 9.9, 2.6, 4.3, 5.6, 0.3, 4.8, 12.8, 8.2, 8.6, 8.6, 7.3, -1.1, -1.4, -7.2, -4.4, -2.4, 3.3, 8.2, 6.3, 6.3, 1.4, 1.4, 1.7, 8.0, 5.2, 7.4, 2.4, 0.4, -0.6, 2.1, -3.6, -0.8, -4.1, -9.8, -10.6, -2.9, -0.0, 3.3, 11.4, 14.8, 9.4, 11.1, 10.4, 2.7, -2.6, 0.8, 0.4, 2.4, 8.4, 8.4, 2.7, 0.7, 1.4, -1.5, 1.3, 8.0, 6.2, 1.7]
+
+Modified:
+[6.0, 4.4, 3.7, 3.7, 3.0, 4.9, 5.7, 2.9, 1.7, 1.7, 0.4, 3.7, 9.0, 9.9, 2.6, 4.6, 5.9, 0.6, 5.1, 12.4, 7.5, 8.2, 8.2, 6.9, -0.8, -1.1, -6.5, -3.7, -2.4, 1.1, 6.3, 3.7, 3.7, 1.7, 1.7, 1.0, 8.3, 5.5, 3.3, 0.5, -0.8, -5.0, -2.3, -5.8, -3.0, -6.3, -9.8, -10.6, -2.9, -0.0, 3.3, 11.7, 12.9, 7.5, 9.5, 6.6, -1.4, -4.5, -3.3, -4.0, 0.2, 6.2, 6.2, 2.7, -1.5, -1.5, -2.2, 0.6, 7.3, 7.7, 3.9]
+
+
+Hopp-Woods scores:
+
+Original:
+[-3.0, -3.0, -3.4, -2.9, -3.2, -4.7, -4.4, -3.8, -3.8, -3.8, -2.3, -3.6, -4.3, -4.7, -2.7, -3.2, -4.0, -0.5, -1.9, -3.9, -2.4, -2.1, -2.1, -1.3, 3.5, 3.1, 4.6, 1.2, 0.4, -3.1, -4.2, -1.2, -1.2, 0.6, 0.6, 0.3, -5.2, -4.6, -5.1, -5.1, -4.3, -2.3, -2.2, 1.3, 1.8, 3.1, 6.6, 6.3, 1.5, 0.5, -0.8, -5.3, -5.8, -4.0, -4.5, -4.0, 0.5, 1.2, 0.7, 0.4, -0.9, -4.9, -4.9, -1.4, -0.1, -0.1, 0.9, 0.3, -5.2, -4.7, -2.9]
+
+Modified:
+[-3.1, -3.1, -3.5, -3.5, -3.5, -4.0, -3.7, -3.1, -3.1, -3.1, -2.3, -3.6, -4.3, -4.7, -2.7, -3.5, -4.3, -0.8, -2.2, -4.2, -2.4, -2.4, -2.4, -1.6, 3.2, 2.8, 1.2, -2.2, -3.0, -6.0, -7.4, -1.0, -1.0, 0.3, 0.3, 0.3, -4.5, -3.9, -3.4, -3.9, -3.1, -1.3, -1.2, 1.8, 2.3, 3.6, 6.6, 6.3, 1.5, 0.5, -0.8, -5.6, -5.6, -3.8, -4.6, -3.6, 1.2, 1.4, 1.4, 1.4, -0.4, -4.4, -4.4, -1.4, 0.4, 0.4, 0.9, 0.3, -5.2, -5.2, -3.4]
+
+Highlighted hydrophobic regions:
+Original sequence:
+AVCPTGLFSNPLCCATNVLDLIGV[1;34mD[0m[1;34mC[0m[1;34mK[0m[1;34mT[0m[1;34mP[0mTIAV[1;34mD[0m[1;34mT[0m[1;34mG[0mAIFQAHC[1;34mA[0m[1;34mS[0m[1;34mK[0m[1;34mG[0m[1;34mS[0m[1;34mK[0m[1;34mP[0mLCCVAP[1;34mV[0m[1;34mA[0m[1;34mD[0m[1;34mQ[0mALLCQK[1;34mA[0m[1;34mI[0mGTF
+
+Modified sequence:
+GIMPTGLLSQPLCCATQILELLGI[1;34mD[0m[1;34mC[0m[1;34mK[0mTWTLGI[1;34mE[0m[1;34mT[0m[1;34mA[0mGLLNGHC[1;34mG[0m[1;34mS[0m[1;34mK[0m[1;34mG[0m[1;34mS[0m[1;34mK[0m[1;34mP[0mLCCIGP[1;34mI[0m[1;34mG[0m[1;34mE[0m[1;34mN[0mGLLC[1;34mN[0m[1;34mK[0m[1;34mG[0m[1;34mL[0mATF
+
+Highlighted antigenic sites:
+Original sequence:
+AVCPTGLFSNPLCCATNVLDLIGV[1;34mD[0m[1;34mC[0m[1;34mK[0m[1;34mT[0m[1;34mP[0mTIAV[1;34mD[0m[1;34mT[0m[1;34mG[0mAIFQAHC[1;34mA[0m[1;34mS[0m[1;34mK[0m[1;34mG[0m[1;34mS[0m[1;34mK[0m[1;34mP[0mLCCVAP[1;34mV[0m[1;34mA[0m[1;34mD[0m[1;34mQ[0mALLCQK[1;34mA[0m[1;34mI[0mGTF
+
+Modified sequence:
+GIMPTGLLSQPLCCATQILELLGI[1;34mD[0m[1;34mC[0m[1;34mK[0mTWTLGI[1;34mE[0m[1;34mT[0m[1;34mA[0mGLLNGHC[1;34mG[0m[1;34mS[0m[1;34mK[0m[1;34mG[0m[1;34mS[0m[1;34mK[0m[1;34mP[0mLCCIGP[1;34mI[0m[1;34mG[0m[1;34mE[0m[1;34mN[0mGLLC[1;34mN[0m[1;34mK[0m[1;34mG[0m[1;34mL[0mATF
