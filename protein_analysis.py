@@ -8,6 +8,17 @@ import numpy as np
 import random
 import math
 import seaborn as sns
+import random
+from datetime import datetime
+import os
+
+random_seed = input("Enter the random seed (leave empty for a random seed): ")
+if random_seed.strip() == "":
+    random_seed = int(datetime.now().timestamp())
+else:
+    random_seed = int(random_seed.strip())
+
+random.seed(random_seed)
 
 
 # Define the amino acid properties based on the table
@@ -255,7 +266,7 @@ def sliding_window(sequence, scores, window_size):
     for i in range(half_window, len(padding_sequence) - half_window):
         window = padding_sequence[i - half_window : i + half_window + 1]
         window_score = sum(scores.get(aa, 0) for aa in window)
-        window_scores.append(window_score)
+        window_scores.append(round(window_score, 2))
     return window_scores
 
 # Kyte-Doolittle analysis with sliding window
@@ -362,6 +373,85 @@ def save_plot(sequence1, scores1, sequence2, scores2, title, filename):
     plt.grid(True)
     plt.legend()
     plt.savefig(filename, dpi=300)
+
+def save_output_to_file(output_string):
+    # Get the current timestamp in a suitable format for the file name
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    output_filename = f"output_{timestamp}.txt"
+
+    with open(output_filename, "w") as output_file:
+        output_file.write(output_string)
+
+    print(f"Output saved to file: {output_filename}")
+
+output_string = f'''
+Original Weight:   {original_weight:.2f}
+Modified Weight:   {modified_weight:.2f}
+Weight Difference: {weight_diff:.2f}
+
+Original pI:   {original_pI:.2f}
+Modified pI:   {modified_pI:.2f}
+pI Difference: {pI_diff:.2f}
+
+Original Aromaticity:   {original_aromaticity:.2f}
+Modified Aromaticity:   {modified_aromaticity:.2f}
+Aromaticity Difference: {aromaticity_diff:.2f}
+
+Original Instability Index:   {original_instability_index:.2f}
+Modified Instability Index:   {modified_instability_index:.2f}
+Instability Index Difference: {instability_index_diff:.2f}
+
+Original Gravy:   {original_gravy:.2f}
+Modified Gravy:   {modified_gravy:.2f}
+Gravy Difference: {gravy_diff:.2f}
+
+Original Charge at pH 7:   {original_charge_ph_7:.2f}
+Modified Charge at pH 7:   {modified_charge_ph_7:.2f}
+Charge at pH 7 Difference: {charge_ph_7_diff:.2f}
+
+Alignment:
+{alignment_seq1}
+{alignment_seq2}
+
+Length of sequences: Original: {len(sequence)}, Mutated: {len(modified_sequence)} amino acids
+Number of differing amino acids: {diff_count}
+Percent change: {diff_count/len(sequence)*100:.2f}%
+Mutated sequence: {modified_sequence}
+
+Kyte-Doolittle scores:
+
+Original:
+{kyte_doolittle_scores_original}
+
+Modified:
+{kyte_doolittle_scores_modified}
+
+
+Hopp-Woods scores:
+
+Original:
+{hopp_woods_scores_original}
+
+Modified:
+{hopp_woods_scores_modified}
+
+Highlighted hydrophobic regions:
+Original sequence:
+{highlighted_sequence_original}
+
+Modified sequence:
+{highlighted_sequence_modified}
+
+Highlighted antigenic sites:
+Original sequence:
+{highlighted_sequence_original}
+
+Modified sequence:
+{highlighted_sequence_modified}
+'''
+
+# Save the output to a file with a timestamp in the name
+save_output_to_file(output_string)
 
 # save Kyte-Doolittle analysis plot
 save_plot(sequence, kyte_doolittle_scores_original, modified_sequence, kyte_doolittle_scores_modified, 'Hydropath./Kyte-Doolittle scores', f'kyte_doolittle_window_{window_size}.png')

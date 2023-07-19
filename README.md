@@ -1,10 +1,10 @@
 # Protein Sequence Modification and Analysis
 
-This script allows users to replace a specified percentage of amino acids in a given protein sequence with others that are part of the same chemical group. This is done while ensuring that the resulting sequence's isoelectric point (pI) and molecular weight do not deviate significantly from the original values. The script also provides various analyses of the original and modified sequences, including their molecular weight, isoelectric point, aromaticity, instability index, GRAVY (Grand Average of Hydropathy), and charge at pH 7.
+This Python script is a bioinformatics tool that performs sequence mutation and analysis on a given protein sequence. It uses various parameters related to amino acid properties, such as hydrophilicity, charge, pKa values, and solubility, to perform mutations while trying to maintain important characteristics of the original sequence. Additionally, it analyzes the impact of these mutations on properties such as molecular weight, isoelectric point (pI), aromaticity, instability index, GRAVY (grand average of hydropathy), and charge at pH 7.
 
 This script utilizes the Biopython library, particularly the `ProteinAnalysis` module.
 
-## Dependencies
+## Requirements
 
 This project has the following dependencies:
 
@@ -20,16 +20,21 @@ To install the required dependencies, you can run the following commands in your
 pip install biopython matplotlib numpy seaborn
 ```
 
+## Usage
 
-
-1. Run the script with:
+1. Clone or download the repository.
+2. Run the script using Python:
 
 ```
 ./protein_sequence_analysis.py
 ```
 
 
-1. You will be asked to input your protein sequence and the percentage of amino acids you want to replace. After first analysis you will be asked to input the sliding window size.
+1. The script will prompt you to enter a protein sequence and the percentage of changes you want to introduce to the sequence.
+2. You can also enter a random seed for reproducibility, but leaving it empty will generate a random seed based on the current timestamp.
+3. The script will perform sequence mutation and analysis. It will display the original and modified properties, differences, and the modified sequence. Additionally, it will show the alignment and the percentage change in amino acids.
+4. The script will generate plots for the Kyte-Doolittle and Hopp-Woods scores of the original and modified sequences.
+5. All results and plots will be saved to a file named output_<timestamp>.txt, where <timestamp> is the current date and time when the file was created.
 
 ## Implementation Details
 
@@ -43,6 +48,42 @@ The script also includes functions to generate Kyte-Doolittle and Hopp-Woods hyd
 
 The main script is contained in `protein_analysis.py`.
 
-## Notes
+## Output
 
-This script is meant for educational and research purposes and should not be used for critical applications without proper validation.
+The script will produce a file named output_<timestamp>.txt, which will contain the following information:
+
+* Original and modified weights
+* Weight difference
+* Original and modified pI
+* pI difference
+* Original and modified aromaticity
+* Aromaticity difference
+* Original and modified instability index
+* Instability index difference
+* Original and modified GRAVY
+* GRAVY difference
+* Original and modified charge at pH 7
+* Charge at pH 7 difference
+* Alignment of the original and modified sequences
+* Length of the original and modified sequences
+* Number of differing amino acids
+* Percent change in amino acids
+* Kyte-Doolittle scores of the original and modified sequences
+* Hopp-Woods scores of the original and modified sequences
+
+The script will also generate two plots:
+
+* A plot showing the Kyte-Doolittle scores of the original and modified sequences
+* A plot showing the Hopp-Woods scores of the original and modified sequences
+
+These plots will be saved as kyte_doolittle_window_<window_size>.png and hopp_woods_window_<window_size>.png, respectively.
+
+Please note that the output will be specific to the input sequence and percentage of changes provided during runtime.
+
+## Disclaimer
+
+This tool is for educational and research purposes only. Use it responsibly and always verify the results. The authors are not responsible for any consequences arising from the use of this tool.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
