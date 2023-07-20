@@ -361,6 +361,8 @@ plot_scores(sequence, kyte_doolittle_scores_original, modified_sequence, kyte_do
 
 # plot Hopp-Woods analysis
 plot_scores(sequence, hopp_woods_scores_original, modified_sequence, hopp_woods_scores_modified, 'Hopp-Woods scores')
+print()
+print()
 
 # save plot
 def save_plot(sequence1, scores1, sequence2, scores2, title, filename):

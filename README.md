@@ -74,7 +74,9 @@ The script will produce a file named output_<timestamp>.txt, which will contain 
 The script will also generate two plots:
 
 * A plot showing the Kyte-Doolittle scores of the original and modified sequences
+  ![Kyte-Doolittle scores](hopp_woods_window_5.png)
 * A plot showing the Hopp-Woods scores of the original and modified sequences
+  ![Hopp-Woods scores](kyte_doolittle_window_5.png)
 
 These plots will be saved as kyte_doolittle_window_<window_size>.png and hopp_woods_window_<window_size>.png, respectively.
 
